@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dark Style</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-family: "Poppins";
+            --color-text: #FFFFFF;
+            --color-circles: #878787;
+            --color-bg: #101111;
+            --color-menu: #292929;
+            --color-linear: #7A87FB;
+            --color-gradient: #FFD49C;
+        }
+    </style>
+</head>
+
+<body class="bg-bg text-text font-[poppins] p-[2rem]">
+    <nav class="flex place-items-center justify-between p-[1rem] lg:p-[3rem]">
+        <div class="flex place-items-center gap-[.5rem] lg:text-[24px]">
+            <img class="sm:w-[30px] lg:w-[44px]" src="Assets/images/logo.svg" alt="">
+            <h1>znisa</h1>
+        </div>
+        <div
+            class="rounded-[220px] border-[1px] bg-linear-to-r from-linear to-gradient lg:hidden w-[50px] h-[37px] flex items-center justify-center">
+            <div
+                class="w-[46px] h-[35px] border-rounded rounded-[220px] border-[5px] border-bg bg-menu flex items-center justify-center">
+                <img class="" src="Assets/images/jam_menu.svg" alt="">
+            </div>
+        </div>
+
+        <!-- responsive -->
+
+        <div
+            class="hidden lg:flex bg-linear-to-r from-gradient to-linear rounded-[280px] w-[420px] h-[50px] justify-center items-center">
+            <div
+                class="flex flex-row gap-[2rem] justify-center items-center w-[418px] h-[48px] bg-[#1C1C1C] rounded-[280px]">
+                <div class="bg-menu w-[50px] h-[35px] border-rounded rounded-full flex justify-center items-center">
+                    <img src="Assets/images/Home Icom.svg" alt="">
+                </div>
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Contact me</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex flex flex-row ">
+            <div
+                class="w-[100px] h-[52px] rounded-[40px] bg-linear-to-r from-gradient to-linear flex justify-center items-center">
+                <button class="w-[98px] h-[50px] rounded-[40px] bg-linear-to-r from-linear to-gradient text-bg">Hire
+                    me</button>
+            </div>
+            <div
+                class="w-[50px] h-[50px] rounded-full bg-linear-to-r from-linear to-gradient flex flex-col justify-center items-center">
+                <div
+                    class="flex flex-col justify-center items-center bg-linear-to-r from-gradient to-linear w-[48px] h-[48px] rounded-full">
+                    <img src="Assets/images/head.svg" alt="">
+                    <img src="Assets/images/tail.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section  -->
+
+    <section class="mt-[1rem]">
+        <div class="flex flex-col lg:mx-15 h-[305px] lg:h-[560px]">
+
+            <!-- Table1 -->
+
+            <div class="flex flex-1">
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block bg-bg"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block bg-bg"></div>
+            </div>
+
+            <!-- Table2 -->
+
+            <div class="flex flex-1 lg:hidden">
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+                <div class="flex-1 border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-zinc-800 bg-bg"></div>
+                <div class="flex-1 border-zinc-800 hidden lg:block"></div>
+            </div>
+
+            <!-- Table3 -->
+
+            <div class="flex-3 flex flex-col items-center justify-between lg:flex lg:flex-row bg-bg">
+                <h1 class="lg:hidden text-[18px] font-[400]">I design and build clean websites</h1>
+                <p class="text-[9px] font-[400] lg:text-[32px] md:text-xs text-center w-2/3 lg:hidden">Write anything
+                    here something
+                    about yourself to showcase what actually you doing or targeting etc.</p>
+                <div
+                    class="bg-linear-to-r from-gradient to-linear w-[65px] md:w-[80px] h-[25px] md:h-[25px] rounded-[40px] p-[1px] lg:hidden">
+                    <button
+                        class="hover:cursor-pointer bg-linear-to-r from-linear to-gradient w-full rounded-[40px] h-full flex items-center justify-center text-page text-[9px] md:text-xs font-[500] text-bg">Hire
+                        me</button>
+                </div>
+                <div class="hidden lg:block lg:flex-1 h-full lg:flex lg:flex-col bg-page">
+                    <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                    <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                    <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                </div>
+                <div
+                    class="hidden lg:block lg:flex-4 bg-bg border-[0.1px] border-zinc-800 h-full lg:flex lg:flex-col items-center justify-center gap-4">
+                    <h1 class="text-[32px] text-blanct">I design and build clean websites</h1>
+                    <p class="text-center w-2/3">Write anything here something about yourself to showcase
+                        what actually you doing or targeting etc.
+                    </p>
+                    <div
+                        class="w-[120px] h-[45px] rounded-[40px] bg-linear-to-r from-gradient to-linear flex justify-center items-center">
+                        <button
+                            class="w-[118px] h-[43px] rounded-[40px] bg-linear-to-r from-linear to-gradient text-bg">Hire
+                            me</button>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:flex-1 border-[0.1px] border-zinc-800 lg:flex lg:flex-col h-full bg-bg">
+                    <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                    <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                    <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                </div>
+            </div>
+            <div class="flex flex-1">
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+                <div class="flex-1 border-r-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 lg:border-r-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-zinc-800 lg:rounded-none"></div>
+                <div class="flex-1 border-l-[0.1px] border-zinc-800 lg:rounded-none"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+            </div>
+            <div class="flex flex-1">
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+            </div>
+
+            <div class="flex flex-1 bg-bg">
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800"></div>
+                <div class="flex-1 border-[0.1px] border-zinc-800 hidden lg:block"></div>
+            </div>
+        </div>
+        <img src="Assets/images/star.svg" alt=""
+            class="hidden lg:block ml-37 w-[28px] -mt-64 h-[28px] object-cover z-2">
+
+        <hr class="w-full border-menu lg:mt-[14.2rem]">
+        <div class="flex justify-evenly mt-[1rem]">
+            <div class="flex justify-evenly gap-[2rem]">
+                <h1 class="text-[14px]">Framer</h1>
+                <img src="Assets/images/etoile.svg" alt="">
+            </div>
+            <div class="flex justify-evenly gap-[2rem]">
+                <h1 class="text-[14px]">Webflow</h1>
+                <img src="Assets/images/etoile.svg" alt="">
+            </div>
+            <div class="flex justify-evenly gap-[2rem]">
+                <h1 class="text-[14px]">Figma</h1>
+                <img src="Assets/images/etoile.svg" alt="">
+            </div>
+            <div class="flex justify-evenly gap-[2rem] hidden lg:flex">
+                <h1 class="text-[14px]">Notion</h1>
+                <img src="Assets/images/etoile.svg" alt="">
+            </div>
+        </div>
+        <hr class="w-full border-menu mt-[1rem]">
+    </section>
+
+    <!-- Section process to design -->
+
+    <section class="p-[1.5rem] mt-[2rem] lg:mx-13">
+        <div class="flex gap-[1rem]">
+            <h1 class="lg:text-[40px]">My process to design</h1>
+            <img class="lg:w-[36px]" src="Assets/images/2stars.svg" alt="">
+        </div>
+        <div class="flex flex-row gap-[2rem] mt-[3rem] lg:gap-[3rem]">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="w-[25px] h-[25px] w-[56px] h-[56px] rounded-full border-white border-[2px] flex items-center justify-center">
+                    <h1>1</h1>
+                </div>
+                <div class="w-[1px] h-[8rem] lg:h-[13rem] border-menu border-[1px] mt-[1rem]"></div>
+            </div>
+            <div class="flex flex-col gap-[1rem]">
+                <div><img class=" w-[56px] h-[56px]" src="Assets/images/pac1.svg" alt=""></div>
+                <h1 class="text-[12px] lg:text-[22px]">Step 1: Product design Research</h1>
+                <p class="text-[9px] lg:text-[19px]">This initial step involves a systematic and thorough <br>
+                    exploration of the market landscape, user needs, and <br> existing solutions.</p>
+                <div
+                    class="bg-linear-to-r from-gradient to-linear w-[85px] h-[25px] rounded-[45px] lg:w-[177px] lg:h-[49px] lg:rounded-[100px] flex items-center justify-center">
+                    <button
+                        class="text-[9px] lg:text-[18px] w-[83px] lg:w-[175px] lg:h-[47px] h-[23px] bg-bg rounded-[45px] lg:rounded-[100px]">See
+                        Examples</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row gap-[2rem] mt-[1rem] lg:gap-[3rem]">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="w-[25px] h-[25px] w-[56px] h-[56px] rounded-full border-white border-[2px] flex items-center justify-center">
+                    <h1>2</h1>
+                </div>
+                <div class="w-[1px] h-[6rem] lg:h-[10rem] border-menu border-[1px] mt-[1rem]"></div>
+            </div>
+            <div class="flex flex-col gap-[1rem]">
+                <div><img class=" w-[56px] h-[56px]" src="Assets/images/pac2.svg" alt=""></div>
+                <h1 class="text-[12px] lg:text-[22px]">Step 2: UI design in figma</h1>
+                <p class="text-[9px] lg:text-[19px]">This initial step involves a systematic and thorough <br>
+                    exploration of the market landscape, user needs, and <br> existing solutions.</p>
+            </div>
+        </div>
+        <div class="flex flex-row gap-[2rem] lg:gap-[3rem] mt-[1rem]">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="w-[25px] h-[25px] w-[56px] h-[56px] rounded-full border-white border-[2px] flex items-center justify-center">
+                    <h1>3</h1>
+                </div>
+                <div class="w-[1px] h-[5rem] lg:h-[10rem] border-menu border-[1px] mt-[1rem]"></div>
+            </div>
+            <div class="flex flex-col gap-[1rem]">
+                <div><img class=" w-[56px] h-[56px]" src="Assets/images/pac3.svg" alt=""></div>
+                <h1 class="text-[12px] lg:text-[22px]">Step 1: No-code develop in webflow</h1>
+                <p class="text-[9px] lg:text-[19px]">This initial step involves a systematic and thorough <br>
+                    exploration of the market landscape, user needs, and <br> existing solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured projects -->
+
+    <section class="p-[1.5rem] mt-[.5rem] lg:mx-13">
+        <div class="flex gap-[1rem]">
+            <h1 class="lg:text-[40px] text-[18px]">Some Featured projects</h1>
+            <img class="lg:w-[36px]" src="Assets/images/2stars.svg" alt="">
+        </div>
+        <div class="bg-[#151515] mt-[2rem]">
+            <div class="flex flex-col gap-[2rem] pt-[2.5rem] pb-[2rem] lg:flex-row lg:justify-between lg:items-center lg:p-[4rem] lg:gap-[5rem]">
+                <div class="w-full h-[316px] bg-linear-to-r from-linear to-gradient  lg:flex-1"></div>
+                <div class="lg:flex-1">
+                    <div class="w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full bg-linear-to-r from-linear to-gradient flex flex-col">
+                        <h1 class="flex justify-center items-center bg-linear-to-t from-[#7D7D7D] to-bg w-[32px] h-[31px] lg:w-[55px] lg:h-[54px] rounded-full">1</h1>
+                    </div>
+                    <h1 class="text-[21px] lg:text-[36px] font-[700] mt-[1rem]">Project Name</h1>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#151515] mt-[2rem]">
+            <div class="flex flex-col gap-[2rem] pt-[2.5rem] pb-[2rem] lg:flex-row lg:justify-between lg:items-center lg:p-[4rem] lg:gap-[5rem]">
+                <div class="w-full h-[316px] bg-linear-to-r from-linear to-gradient  lg:flex-1"></div>
+                <div class="lg:flex-1">
+                    <div class="w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full bg-linear-to-r from-linear to-gradient flex flex-col">
+                        <h1 class="flex justify-center items-center bg-linear-to-t from-[#7D7D7D] to-bg w-[32px] h-[31px] lg:w-[55px] lg:h-[54px] rounded-full">2</h1>
+                    </div>
+                    <h1 class="text-[21px] lg:text-[36px] font-[700] mt-[1rem]">Project Name</h1>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#151515] mt-[2rem]">
+            <div class="flex flex-col gap-[2rem] pt-[2.5rem] pb-[2rem] lg:flex-row lg:justify-between lg:items-center lg:p-[4rem] lg:gap-[5rem]">
+                <div class="w-full h-[316px] bg-linear-to-r from-linear to-gradient  lg:flex-1"></div>
+                <div class="lg:flex-1">
+                    <div class="w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full bg-linear-to-r from-linear to-gradient flex flex-col">
+                        <h1 class="flex justify-center items-center bg-linear-to-t from-[#7D7D7D] to-bg w-[32px] h-[31px] lg:w-[55px] lg:h-[54px] rounded-full">3</h1>
+                    </div>
+                    <h1 class="text-[21px] lg:text-[36px] font-[700] mt-[1rem]">Project Name</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Client testimonials -->
+
+    <section class="p-[1.5rem] mt-[.5rem] lg:mx-13">
+        <div class="flex gap-[1rem]">
+            <h1 class="lg:text-[40px] text-[18px] font-[400]">Client testimonials</h1>
+            <img class="lg:w-[36px]" src="Assets/images/2stars.svg" alt="">
+        </div>
+        
+        <div class="lg:flex lg:gap-[4rem]">
+                <div class="bg-gradient-to-tl from-bg from-50%  to-gradient to-90%  p-[1px] border-[1.25px] rounded-[20px] border-bg mt-[1rem] bg-[#151515] mt-[3rem]">
+                    <div class="p-[1rem] flex flex-col gap-[2rem] w-full h-full rounded-[20px] bg-gradient-to-br from-bg from-0% to-bg to-50%">
+                        <div class="flex justify-between ">
+                            <div class="flex">
+                                <div class="flex items-center justify-evenly gap-[1rem]">
+                                  <div class="w-[40px] h-[40px] bg-[#878787] rounded-full"></div>
+                                   <div class="flex flex-col gap-[2px]">
+                                     <h1 class="text-[13px] lg:text-[16px] font-[400]">Client Name .</h1>
+                                     <p class="text-[10px] lg:text-[12px] font-[400]">Product designer</p>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class=""><img src="Assets/images/comm.svg" alt=""></div>
+                        </div>
+                        <p class="font-[400] text-[11px] lg:text-[14px]">
+                            s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been <br> the industry's standard dummy text ever since the 
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-tl from-bg from-50%  to-gradient to-90%  p-[1px] border-[1.25px] rounded-[20px] border-bg mt-[1rem] bg-[#151515] mt-[3rem]">
+                    <div class="p-[1rem] flex flex-col gap-[2rem] w-full h-full rounded-[20px] bg-gradient-to-br from-bg from-0% to-bg to-50%">
+                        <div class="flex justify-between ">
+                            <div class="flex">
+                                <div class="flex items-center justify-evenly gap-[1rem]">
+                                  <div class="w-[40px] h-[40px] bg-[#878787] rounded-full"></div>
+                                   <div class="flex flex-col gap-[2px]">
+                                     <h1 class="text-[15px] lg:text-[16px] font-[400]">Client Name .</h1>
+                                     <p class="text-[11px] lg:text-[12px] font-[400]">Product designer</p>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class=""><img src="Assets/images/comm.svg" alt=""></div>
+                        </div>
+                        <p class="font-[400] text-[11px] lg:text-[14px]">
+                            s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been <br> the industry's standard dummy text ever since the 
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="lg:flex lg:gap-[3rem]">
+            <div class="bg-gradient-to-tl from-bg from-50%  to-gradient to-90%  p-[1px] border-[1.25px] rounded-[20px] border-bg mt-[1rem] bg-[#151515] mt-[3rem]">
+                <div class="p-[1rem] flex flex-col gap-[2rem] w-full h-full rounded-[20px] bg-gradient-to-br from-bg from-0% to-bg to-50%">
+                    <div class="flex justify-between ">
+                        <div class="flex">
+                            <div class="flex items-center justify-evenly gap-[1rem]">
+                              <div class="w-[40px] h-[40px] bg-[#878787] rounded-full"></div>
+                               <div class="flex flex-col gap-[2px]">
+                                 <h1 class="text-[15px]  lg:text-[16px] font-[400]">Client Name .</h1>
+                                 <p class="text-[11px]  lg:text-[12px] font-[400]">Product designer</p>
+                               </div>
+                            </div>
+                         </div>
+                         <div class=""><img src="Assets/images/comm.svg" alt=""></div>
+                    </div>
+                    <p class="font-[400] text-[11px] lg:text-[14px]">
+                        s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been <br> the industry's standard dummy text ever since the 
+                    </p>
+                </div>
+            </div>
+            <div class="bg-gradient-to-tl from-bg from-50%  to-gradient to-90%  p-[1px] border-[1.25px] rounded-[20px] border-bg mt-[1rem] bg-[#151515] mt-[3rem]">
+                <div class="p-[1rem] flex flex-col gap-[2rem] w-full h-full rounded-[20px] bg-gradient-to-br from-bg from-0% to-bg to-50%">
+                    <div class="flex justify-between ">
+                        <div class="flex">
+                            <div class="flex items-center justify-evenly gap-[1rem]">
+                              <div class="w-[40px] h-[40px] bg-[#878787] rounded-full"></div>
+                               <div class="flex flex-col gap-[2px]">
+                                 <h1 class="text-[15px] lg:text-[16px] font-[400]">Client Name .</h1>
+                                 <p class="text-[11px] lg:text-[12px] font-[400]">Product designer</p>
+                               </div>
+                            </div>
+                         </div>
+                         <div class=""><img src="Assets/images/comm.svg" alt=""></div>
+                    </div>
+                    <p class="font-[400] text-[11px] lg:text-[14px]">
+                        s simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been <br> the industry's standard dummy text ever since the 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- last section -->
+
+    <section class="p-[1.5rem] mt-[.5rem] lg:mx-13 flex items-center justify-between">
+       <div class="flex flex-col gap-[1.5rem]">
+        <div class="flex gap-[1rem]">
+            <h1 class="lg:text-[40px] text-[18px] lg:text-[40px] font-[400]">Have idea about project?</h1>
+            <img class="lg:w-[36px]" src="Assets/images/2stars.svg" alt="">
+        </div>
+        <p class="text-[9px] font-[400] lg:text-[16px]">Write anything here something about yourself to <br> showcase what actually you doing or targeting etc.</p>
+        <div class="w-[115px] h-[30px] rounded-[40px] lg:w-[200px] lg:h-[50px] lg:rounded-[75px] bg-linear-to-r from-gradient to-linear flex justify-center items-center">
+            <button class="w-[113px] h-[28px] rounded-[40px] lg:w-[197px] lg:h-[47px] lg:rounded-[75px] bg-linear-to-r from-linear to-gradient text-bg font-[500] text-[10px] lg:text-[16px]">Send us a message</button>
+        </div>
+       </div>
+       <div class="hidden lg:flex flex-col bg-text w-[350px] h-[300px]">
+         <div class="flex">
+          <div class="w-[190px] h-[200px] rounded-br-[10px] bg-bg border-r-[1px] border-b-[1px] border-menu"></div>
+          <div class="w-[65px] h-[200px] rounded-bl-[10px] bg-bg border-r-[1px] border-b-[1px] border-menu"></div>
+          <div class="w-[65px] h-[200px] bg-bg border-r-[1px] border-b-[1px] border-menu"></div>
+          <div class="w-[30px] h-[200px] bg-bg border-b-[1px] border-menu"></div>
+         </div>
+         <div class="flex">
+            <div class="w-[190px] h-[60px] rounded-tr-[10px] bg-bg border-r-[1px] border-b-[1px] border-menu"></div>
+            <div class="w-[65px] h-[60px] rounded-tl-[10px] rounded-br-[10px] bg-bg border-r-[1px] border-b-[1px] border-menu"></div>
+            <div class="w-[65px] h-[60px] rounded-bl-[10px] bg-bg border-r-[1px] border-b-[1px] border-menu"></div>
+            <div class="w-[30px] h-[60px] bg-bg border-b-[1px] border-menu"></div>
+         </div>
+         <div class="flex">
+            <div class="w-[190px] h-[80px] bg-bg border-r-[1px] border-menu"></div>
+            <div class="w-[65px] h-[80px] rounded-tr-[10px] bg-bg border-r-[1px] border-r-[1px] border-menu"></div>
+            <div class="w-[65px] h-[80px] rounded-tl-[10px] bg-bg border-r-[1px] border-menu"></div>
+            <div class="w-[30px] h-[80px] bg-bg border-menu"></div>
+         </div>
+       </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="p-[1.5rem] mt-[.5rem] lg:mx-13">
+        <div class="flex flex-col gap-[2rem] p-[1rem] lg:flex-row-reverse lg:items-center lg:justify-between lg:mt-[5rem]">
+            <div class="hidden lg:flex flex flex-row hidden lg:flex">
+                <div
+                    class="w-[100px] h-[52px] rounded-[40px] bg-linear-to-r from-gradient to-linear flex justify-center items-center">
+                    <button class="w-[98px] h-[50px] rounded-[40px] bg-linear-to-r from-linear to-gradient text-bg">Hire
+                        me</button>
+                </div>
+                <div
+                    class="w-[50px] h-[50px] rounded-full bg-linear-to-r from-linear to-gradient flex flex-col justify-center items-center">
+                    <div
+                        class="flex flex-col justify-center items-center bg-linear-to-r from-gradient to-linear w-[48px] h-[48px] rounded-full">
+                        <img src="Assets/images/head.svg" alt="">
+                        <img src="Assets/images/tail.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-[280px] h-[40px] rounded-[220px] lg:w-[370px] h-[50px] lg:rounded-[290px] bg-linear-to-r from-gradient to-linear flex items-center justify-center">
+                <nav class="w-[278px] h-[38px] rounded-[220px] lg:w-[368px] h-[48px] lg:rounded-[290px] bg-[#1C1C1C] flex justify-evenly items-center">
+                    <a class="bg-menu flex items-center justify-center w-[40px] h-[30px] rounded-[30px]" href=""><img src="Assets/images/x.svg" alt=""></a>
+                    <a class="bg-menu flex items-center justify-center w-[40px] h-[30px] rounded-[30px]" href=""><img src="Assets/images/basket.svg" alt=""></a>
+                    <a class="bg-menu flex items-center justify-center w-[40px] h-[30px] rounded-[30px]" href=""><img src="Assets/images/insta.svg" alt=""></a>
+                    <a class="bg-menu flex items-center justify-center w-[40px] h-[30px] rounded-[30px]" href=""><img src="Assets/images/face.svg" alt=""></a>
+                </nav>
+            </div>
+            <div class="flex place-items-center gap-[.5rem] lg:text-[24px]">
+                <img class="sm:w-[30px] lg:w-[44px]" src="Assets/images/logo.svg" alt="">
+                <h1 class="text-[20px]">znisa</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
